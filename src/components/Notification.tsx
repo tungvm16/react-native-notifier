@@ -67,6 +67,7 @@ interface NotificationComponentAllProps extends NotificationComponentProps {
   title?: string;
   description?: string;
   notifiedAt?: string;
+  brandName?: string;
 }
 
 const NotificationComponent: React.FunctionComponent<NotificationComponentAllProps> = ({
@@ -76,6 +77,7 @@ const NotificationComponent: React.FunctionComponent<NotificationComponentAllPro
   ContainerComponent,
   containerStyle,
   notifiedAt,
+  brandName,
   contentStyle,
   imageStyle,
   viewNotifieAt,
@@ -91,7 +93,7 @@ const NotificationComponent: React.FunctionComponent<NotificationComponentAllPro
         <View style={contentStyle}>
             {/* @ts-ignore */}
             <Image style={imageStyle} source={imageSource} />
-            <Text style={{ marginLeft: 5 }}>HeyU</Text>
+            <Text style={{ marginLeft: 5 }}>{brandName}</Text>
             <View style={viewNotifieAt}>
               <Text style={{color: '#161616'}}>{notifiedAt}</Text>
             </View>
