@@ -89,6 +89,7 @@ const NotificationComponent: React.FunctionComponent<NotificationComponentAllPro
     <Container>
       <View style={containerStyle}>
         <View style={contentStyle}>
+            {/* @ts-ignore */}
             <Image style={imageStyle} source={imageSource} />
             <Text style={{ marginLeft: 5 }}>HeyU</Text>
             <View style={viewNotifieAt}>

@@ -145,6 +145,7 @@ export class NotifierRoot extends React.PureComponent<ShowNotificationParams, St
     }
 
     const {
+      //@ts-ignore
       notifiedAt,
       title,
       description,
@@ -156,6 +157,7 @@ export class NotifierRoot extends React.PureComponent<ShowNotificationParams, St
     } = params;
 
     this.setState({
+      //@ts-ignore
       notifiedAt,
       title,
       description,
@@ -259,6 +261,7 @@ export class NotifierRoot extends React.PureComponent<ShowNotificationParams, St
 
   render() {
     const {
+      //@ts-ignore
       notifiedAt,
       title,
       description,
