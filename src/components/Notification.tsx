@@ -98,7 +98,6 @@ const NotificationComponent: React.FunctionComponent<NotificationComponentAllPro
           <Text style={{ color: '#161616' }}>{notifiedAt}</Text>
         </View>
       </View>
-      <View style={{ width: 30, height: 3, backgroundColor: '#cec8c8', borderRadius: 1.5, alignSelf: 'center' }} />
     </Container>
   );
 };
