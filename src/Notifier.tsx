@@ -290,7 +290,7 @@ export class NotifierRoot extends React.PureComponent<ShowNotificationParams, St
               onLayout={this.onLayout}
               style={
                 Platform.OS === 'android' && translucentStatusBar
-                  ? {marginTop: 8}
+                  ? styles.translucentStatusBarPadding
                   : undefined
               }
             >
